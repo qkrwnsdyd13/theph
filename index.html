@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Beauty &amp; Wellness – Low-fidelity Wireframe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#fullpage" class="skip">본문 바로가기</a>
+
+<!-- ============================================================
+     HEADER (fixed)
+============================================================ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <h1 class="logo"><a href="#home" data-fp-link><span class="ph-box">LOGO</span></a></h1>
+
+    <nav class="gnb" aria-label="주메뉴">
+      <ul>
+        <li><a href="#about" data-fp-link>ABOUT</a></li>
+        <li><a href="#direction" data-fp-link>DIRECTION</a></li>
+        <li><a href="#program" data-fp-link>PROGRAM</a></li>
+        <li><a href="#process" data-fp-link>PROCESS</a></li>
+        <li><a href="#space" data-fp-link>SPACE</a></li>
+        <li><a href="#apply" data-fp-link>APPLY</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-side">
+      <a href="#apply" class="btn-solid sm" data-fp-link>상담 신청</a>
+      <button type="button" class="btn-menu" aria-label="전체메뉴 열기" aria-expanded="false" aria-controls="mMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- 모바일 전체메뉴 -->
+<div class="m-menu" id="mMenu" hidden>
+  <div class="m-menu-head">
+    <span class="ph-box">LOGO</span>
+    <button type="button" class="btn-close" aria-label="전체메뉴 닫기">✕</button>
+  </div>
+  <ul class="m-gnb">
+    <li><a href="#about" data-fp-link>ABOUT</a></li>
+    <li><a href="#direction" data-fp-link>DIRECTION</a></li>
+    <li><a href="#program" data-fp-link>PROGRAM</a></li>
+    <li><a href="#process" data-fp-link>PROCESS</a></li>
+    <li><a href="#space" data-fp-link>SPACE</a></li>
+    <li><a href="#apply" data-fp-link>APPLY</a></li>
+  </ul>
+  <a href="#apply" class="btn-solid block" data-fp-link>상담 신청하기</a>
+</div>
+
+<!-- 우측 섹션 내비게이션 -->
+<nav class="fp-nav" aria-label="섹션 이동">
+  <ul id="fpNav"></ul><!-- JS 생성 -->
+</nav>
+
+<!-- 섹션 끝 안내 (한 번 더 스크롤) -->
+<div class="fp-hint" id="fpHint" aria-hidden="true">
+  <span class="fp-hint-txt">한 번 더 스크롤하면 다음 섹션</span>
+  <span class="fp-hint-bar"><i></i></span>
+</div>
+
+<!-- ============================================================
+     FULLPAGE
+     - 각 .fp-section 은 100vh 높이의 스크롤 컨테이너
+     - 섹션 내부 콘텐츠가 길면 내부에서 일반 스크롤
+     - 섹션 끝(상/하단)에 도달한 뒤 "새로운 스크롤 동작"이 있을 때만 이동
+============================================================ -->
+<main class="fp-wrap" id="fullpage">
+  <div class="fp-track" id="fpTrack">
+
+    <!-- 01 HOME -->
+    <section class="fp-section s-home" id="home" data-title="HOME" tabindex="-1">
+      <div class="visual ph dark">MAIN VISUAL (IMAGE / VIDEO)</div>
+      <div class="home-txt">
+        <p class="label light">PRIVATE BEAUTY &amp; WELLNESS DIRECTION</p>
+        <h2 class="h-hero">Main Brand Copy<br>Goes Here</h2>
+        <p class="sub">서브 카피 영역 · 브랜드를 한 줄로 설명하는 문장이 들어갑니다.</p>
+        <div class="btns">
+          <a href="#apply" class="btn-solid inv" data-fp-link>상담 신청</a>
+          <a href="#about" class="btn-line inv" data-fp-link>브랜드 소개</a>
+        </div>
+      </div>
+      <span class="scroll-cue">SCROLL ↓</span>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="fp-section s-about" id="about" data-title="ABOUT" tabindex="-1">
+      <div class="inner">
+        <div class="about-grid">
+          <div class="ph img-tall">BRAND IMAGE</div>
+          <div class="about-txt">
+            <p class="label">02 · ABOUT</p>
+            <h2 class="h-sec">Brand Story<br>Title Copy</h2>
+            <p class="txt">브랜드 철학을 설명하는 본문입니다. 3~5줄 정도의 소개 문장이 들어갑니다.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <p class="txt">두 번째 단락. 브랜드가 지향하는 고객 경험과 가치에 대한 설명이 이어집니다.</p>
+            <dl class="about-num">
+              <div><dt>Keyword 01</dt><dd>00</dd></div>
+              <div><dt>Keyword 02</dt><dd>00</dd></div>
+              <div><dt>Keyword 03</dt><dd>00</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 DIRECTION -->
+    <section class="fp-section s-direction" id="direction" data-title="DIRECTION" tabindex="-1">
+      <div class="inner">
+        <div class="sec-head center">
+          <p class="label">03 · DIRECTION</p>
+          <h2 class="h-sec">4 Directions Title</h2>
+          <p class="txt">이미지 · 태도 · 셀프케어 · 라이프스타일을 함께 설계한다는 메시지 영역</p>
+        </div>
+        <ul class="dir-list">
+          <li><div class="ph">ICON / IMAGE</div><span class="num">01</span><strong>IMAGE</strong><p>항목 설명 텍스트 2줄 분량</p></li>
+          <li><div class="ph">ICON / IMAGE</div><span class="num">02</span><strong>ATTITUDE</strong><p>항목 설명 텍스트 2줄 분량</p></li>
+          <li><div class="ph">ICON / IMAGE</div><span class="num">03</span><strong>SELF-CARE</strong><p>항목 설명 텍스트 2줄 분량</p></li>
+          <li><div class="ph">ICON / IMAGE</div><span class="num">04</span><strong>LIFESTYLE</strong><p>항목 설명 텍스트 2줄 분량</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 PROGRAM (긴 섹션 – 내부 스크롤) -->
+    <section class="fp-section s-program" id="program" data-title="PROGRAM" tabindex="-1">
+      <div class="inner">
+        <div class="sec-head">
+          <p class="label">04 · PROGRAM</p>
+          <h2 class="h-sec">Program Title</h2>
+        </div>
+        <ul class="tab" role="tablist" id="programTab">
+          <li role="presentation"><button type="button" role="tab" aria-selected="true" data-filter="all">ALL</button></li>
+          <li role="presentation"><button type="button" role="tab" aria-selected="false" data-filter="beauty">BEAUTY</button></li>
+          <li role="presentation"><button type="button" role="tab" aria-selected="false" data-filter="wellness">WELLNESS</button></li>
+          <li role="presentation"><button type="button" role="tab" aria-selected="false" data-filter="styling">STYLING</button></li>
+        </ul>
+        <ul class="program-list" id="programList">
+          <li data-cat="beauty"><div class="ph">PROGRAM IMAGE</div><span class="tag">BEAUTY</span><strong>Program Name 01</strong><p>프로그램 설명 1~2줄</p><span class="meta">00 min · 1:1</span></li>
+          <li data-cat="beauty"><div class="ph">PROGRAM IMAGE</div><span class="tag">BEAUTY</span><strong>Program Name 02</strong><p>프로그램 설명 1~2줄</p><span class="meta">00 min · 1:1</span></li>
+          <li data-cat="wellness"><div class="ph">PROGRAM IMAGE</div><span class="tag">WELLNESS</span><strong>Program Name 03</strong><p>프로그램 설명 1~2줄</p><span class="meta">00 min · 1:1</span></li>
+          <li data-cat="wellness"><div class="ph">PROGRAM IMAGE</div><span class="tag">WELLNESS</span><strong>Program Name 04</strong><p>프로그램 설명 1~2줄</p><span class="meta">00 min · 1:1</span></li>
+          <li data-cat="styling"><div class="ph">PROGRAM IMAGE</div><span class="tag">STYLING</span><strong>Program Name 05</strong><p>프로그램 설명 1~2줄</p><span class="meta">00 min · 1:1</span></li>
+          <li data-cat="styling"><div class="ph">PROGRAM IMAGE</div><span class="tag">STYLING</span><strong>Program Name 06</strong><p>프로그램 설명 1~2줄</p><span class="meta">00 min · 1:1</span></li>
+        </ul>
+        <div class="center-btn"><a href="#apply" class="btn-line" data-fp-link>프로그램 상담 신청</a></div>
+      </div>
+    </section>
+
+    <!-- 05 PROCESS -->
+    <section class="fp-section s-process" id="process" data-title="PROCESS" tabindex="-1">
+      <div class="inner">
+        <div class="sec-head center">
+          <p class="label">05 · PROCESS</p>
+          <h2 class="h-sec">How It Works</h2>
+        </div>
+        <ol class="process-list">
+          <li><span class="step">STEP 01</span><div class="ph-circle">ICON</div><strong>상담 신청</strong><p>단계 설명 1~2줄</p></li>
+          <li><span class="step">STEP 02</span><div class="ph-circle">ICON</div><strong>1:1 진단</strong><p>단계 설명 1~2줄</p></li>
+          <li><span class="step">STEP 03</span><div class="ph-circle">ICON</div><strong>디렉션 설계</strong><p>단계 설명 1~2줄</p></li>
+          <li><span class="step">STEP 04</span><div class="ph-circle">ICON</div><strong>프로그램 진행</strong><p>단계 설명 1~2줄</p></li>
+          <li><span class="step">STEP 05</span><div class="ph-circle">ICON</div><strong>사후 관리</strong><p>단계 설명 1~2줄</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 06 SPACE (긴 섹션 – 내부 스크롤) -->
+    <section class="fp-section s-space" id="space" data-title="SPACE" tabindex="-1">
+      <div class="inner">
+        <div class="sec-head">
+          <p class="label">06 · SPACE</p>
+          <h2 class="h-sec">Private Space</h2>
+          <p class="txt">공간 소개 텍스트 1~2줄</p>
+        </div>
+        <div class="gallery">
+          <div class="ph g1">SPACE 01</div>
+          <div class="ph g2">SPACE 02</div>
+          <div class="ph g3">SPACE 03</div>
+          <div class="ph g4">SPACE 04</div>
+          <div class="ph g5">SPACE 05</div>
+        </div>
+        <div class="location">
+          <div class="ph map">MAP</div>
+          <dl>
+            <dt>ADDRESS</dt><dd>서울특별시 OO구 OO로 000, 0층</dd>
+            <dt>HOURS</dt><dd>00:00 – 00:00 (예약제)</dd>
+            <dt>CONTACT</dt><dd>00-0000-0000</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+     <!-- 07 APPLY (짧은 섹션 – 모집 안내 + 문의처) -->
+    <section class="fp-section s-apply" id="apply" data-title="APPLY" data-theme="dark" tabindex="-1">
+      <div class="apply-bg ph dark">BACKGROUND IMAGE</div>
+      <div class="apply-inner">
+        <p class="label light">APPLY</p>
+        <h2 class="apply-tit">THE PRINCESS 1기 모집</h2>
+        <span class="apply-line" aria-hidden="true"></span>
+        <p class="apply-txt">
+          브랜드의 첫 시작을 함께할 분들을 기다립니다. 자신에게 어울리는 아름다움을 알아가고 싶은 분,<br>
+          막연했던 자기관리에 기준을 세우고 싶은 분, 결혼을 비롯한 삶의 중요한 전환점에서 새로운 모습을<br>
+          준비하고 싶은 분께.
+        </p>
+        <a href="https://www.instagram.com/theph.house/" class="btn-line inv apply-btn" target="_blank" rel="noopener">APPLY NOW</a>
+
+        <div class="apply-contact">
+          <p class="contact-tit">PARTNERSHIP &amp; INQUIRY</p>
+          <dl>
+            <div><dt>INSTAGRAM</dt><dd><a href="https://www.instagram.com/theph.house/" target="_blank" rel="noopener">@theph.house</a></dd></div>
+            <div><dt>EMAIL</dt><dd><a href="mailto:letter.for.princess@gmail.com">letter.for.princess@gmail.com</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+      <footer class="footer">
+        <div class="inner">
+          <div class="foot-top">
+            <span class="ph-box">FOOTER LOGO</span>
+            <ul class="policy">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+            </ul>
+            <ul class="sns">
+              <li><a href="#" class="ph-circle sm" aria-label="인스타그램">I</a></li>
+              <li><a href="#" class="ph-circle sm" aria-label="메신저 채널">K</a></li>
+              <li><a href="#" class="ph-circle sm" aria-label="블로그">B</a></li>
+            </ul>
+          </div>
+          <address>
+            상호 : OOOO &nbsp;|&nbsp; 대표 : 홍길동 &nbsp;|&nbsp; 사업자등록번호 : 000-00-00000 &nbsp;|&nbsp; 주소 : 서울특별시 OO구 OO로 000 &nbsp;|&nbsp; TEL : 00-0000-0000
+          </address>
+          <p class="copy">© 2026 BRAND. All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+
+  </div>
+</main>
+<script src="js/fullpage.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
